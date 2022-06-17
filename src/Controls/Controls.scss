@@ -1,0 +1,14 @@
+@import '../constants';
+
+.controls {
+    position: fixed;
+    height: 100%;
+    width: $controlsWidth;
+    top: 0;
+    z-index: 1;
+
+    background-color: beige;
+    & > button {
+        padding: 0;
+    }
+}

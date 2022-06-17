@@ -1,0 +1,9 @@
+@import '../constants';
+
+.main {
+    position: absolute;
+    left: $controlsWidth;
+    top: $headerHeight;
+    height: calc(100% - #{$headerHeight});
+    width: calc(100% - #{$controlsWidth});
+}

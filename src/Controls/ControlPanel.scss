@@ -1,0 +1,22 @@
+@import '../constants';
+
+.control-panel {
+    position: fixed;
+    padding: .5rem;
+    height: 100%;
+    width: $controlPanelWidth;
+    top: 0px;
+    left: calc(-1 * (#{$controlPanelWidth} + 10px));
+    background-color: aliceblue;
+    z-index: -1;
+
+    -webkit-box-shadow: 5px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 5px 0px 10px 0px rgba(0,0,0,0.5);
+
+    transition: left 500ms;
+
+    &-open {
+        left: $controlsWidth;
+    }
+}

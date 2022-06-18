@@ -14,7 +14,7 @@
     -moz-box-shadow: 5px 0px 10px 0px rgba(0,0,0,0.5);
     box-shadow: 5px 0px 10px 0px rgba(0,0,0,0.5);
 
-    transition: left 500ms;
+    transition: left 300ms;
 
     &-open {
         left: $controlsWidth;

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./Navigation.scss";
 
@@ -14,19 +15,19 @@ export default function Navigation() {
 		<nav className={css.container}>
 			<ul className={css.nav}>
 				<li className={css.element}>
-					<a href="#to-nowhere" className={css.link}>
-						Element 1
-					</a>
+					<Link className={css.link} to="/home">
+						Home
+					</Link>
 				</li>
 				<li className={css.element}>
-					<a href="#to-nowhere" className={css.link}>
-						Element 2
-					</a>
+					<Link className={css.link} to="/about">
+						About
+					</Link>
 				</li>
 				<li className={css.element}>
-					<a href="#to-nowhere" className={css.link}>
-						Element 3
-					</a>
+					<Link className={css.link} to="/contact-us">
+						Contact us
+					</Link>
 				</li>
 			</ul>
 		</nav>

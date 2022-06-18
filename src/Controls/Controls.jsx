@@ -6,20 +6,25 @@ import "./Controls.scss";
 
 const css = {
 	container: "controls",
+	section: 'controls-section'
 };
 
 export default function Controls() {
-	const ctx = useLayoutContext();
+	const { panelOpen, events } = useLayoutContext();
 
 	const onHandleOpen = useCallback(() => {
-		ctx.events.setPanelOpen((prev) => !prev);
-	}, [ctx]);
+		events.setPanelOpen((prev) => !prev);
+	}, [events]);
 
 	return (
-		<section className={css.container}>
-			<button onClick={onHandleOpen}>Toggle menu</button>
-			<button>Option 3</button>
-			<ControlPanel isOpen={ctx.panelOpen} />
-		</section>
+		<div className={css.container}>
+			<section className={css.section}>
+				<button onClick={onHandleOpen}>Toggle menu</button>
+				<button onClick={() => {
+					alert('nothing has implemented yet');
+				}}>Option 3</button>
+			</section>
+			<ControlPanel isOpen={panelOpen} />
+		</div>
 	);
 }

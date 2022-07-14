@@ -1,0 +1,44 @@
+@import "../constants";
+
+.navigation {
+    position: fixed;
+    width: 100%;
+    top: $navigation-top;
+    left: $navigation-left;
+    min-height: $navigation-min-height;
+    background-color: gray;
+    padding-left: .5rem;
+    z-index: $zindex-fixed;
+
+    &-nav {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.navigation-nav > li {
+    padding-right: .25rem;
+}
+
+.navigation-nav__link {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+
+    transition: color 500ms;
+
+    &:hover {
+        text-decoration: underline;
+        color: coral;
+    }
+}
+
+@media (max-width: 769px) {
+    .navigation {
+        width: 100%;
+        left: 0;
+        top: $navigation-top-s1;
+    }
+}

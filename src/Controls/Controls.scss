@@ -1,0 +1,45 @@
+@import '../constants';
+
+.controls {
+    position: fixed;
+    height: 100%;
+    z-index: calc(#{$zindex-fixed} + 1);
+
+    &-section {
+        height: 100%;
+        width: $controls-width;
+        background-color: beige;
+    
+        & > button {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .controls {
+        // background-color: blue;
+        // left: 0;
+        width: 100%;
+        height: $controls-height-s1;
+
+        &-section {
+            height: $controls-height-s1;
+            width: 100%;
+            background-color: beige;
+        
+            & > button {
+                padding: 0;
+            }
+        }
+    }
+}
+
+// @media (max-width: 481px) {
+//     .controls {
+//         // background-color: blue;
+//         // left: 0;
+//         width: 100%;
+//         height: $controls-height-s1;
+//     }
+// }

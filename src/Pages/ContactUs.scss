@@ -1,0 +1,21 @@
+.contact-us {
+    padding: 1rem;
+}
+
+.contact-us__form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+    & fieldset {
+        margin-bottom: .5rem;
+    }
+}
+
+.contact-us__form-foot {
+    margin-left: auto;
+
+    & button:first-child {
+        margin-right: .25rem;
+    }
+}

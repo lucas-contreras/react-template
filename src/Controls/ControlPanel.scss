@@ -4,9 +4,9 @@
     position: fixed;
     padding: .5rem;
     height: 100%;
-    width: $controlPanelWidth;
+    width: $control-panel-width;
     top: 0px;
-    left: calc(-1 * (#{$controlPanelWidth} + 10px));
+    left: calc(-1 * (#{$control-panel-width} + 10px));
     background-color: aliceblue;
     z-index: -1;
 
@@ -17,6 +17,6 @@
     transition: left 300ms;
 
     &-open {
-        left: $controlsWidth;
+        left: $controls-width;
     }
 }

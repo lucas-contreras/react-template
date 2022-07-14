@@ -1,5 +1,5 @@
 import React, { useCallback } from "react";
-import { useLayoutContext } from "../Providers/LayoutProvider";
+import { useAppContext } from "../Providers/AppProvider";
 import ControlPanel from "./ControlPanel";
 
 import "./Controls.scss";
@@ -10,7 +10,7 @@ const css = {
 };
 
 export default function Controls() {
-	const { panelOpen, events } = useLayoutContext();
+	const { panelOpen, events } = useAppContext();
 
 	const onHandleOpen = useCallback(() => {
 		events.setPanelOpen((prev) => !prev);

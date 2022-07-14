@@ -3,9 +3,11 @@
 .header {
     position: fixed;
     padding-left: 1rem;
-    height: 6rem;
-    width: calc(100% - #{$controlsWidth});
-    left: $controlsWidth;
+    height: $header-height;
+    width: calc(100% - #{$header-width});
+    top: 0;
+    left: $header-left;
+    z-index: $zindex-fixed;
 
     background-color: #2f4f4f;
 
@@ -14,3 +16,22 @@
         margin-bottom: .5rem;
     }
 }
+
+@media (max-width: 769px) {
+    .header {
+        left: 0;
+        top: $header-top-s1;
+        height: $header-height-s1;
+        width: 100%;
+    }
+}
+
+// @media (max-width: 481px) {
+//     .header {
+//         // background-color: blue;
+//         left: 0;
+//         top: $controls-height-s1;
+//         width: 100%;
+//         height: $header-height-s1;
+//     }
+// }

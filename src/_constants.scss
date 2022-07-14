@@ -1,3 +1,38 @@
-$controlsWidth: 3rem;
-$controlPanelWidth: 16rem;
-$headerHeight: 6rem;
+$controls-width: 3rem;
+$controls-height-s1: 3rem;
+$control-panel-width: 16rem;
+
+
+// Header params
+$header-width: $controls-width;
+$header-height: 4.5rem;
+$header-height-s1: 3rem;
+$header-left: $controls-width;
+$header-top-s1: $controls-height-s1;
+
+// Navigation params
+$navigation-min-height: 1.5rem;
+$navigation-left: 3rem;
+$navigation-top: 4.5rem;
+$navigation-top-s1: $controls-height-s1 + $header-height-s1;
+
+// https://getbootstrap.com/docs/5.0/layout/z-index/
+$zindex-dropdown: 1000;
+$zindex-sticky: 1020;
+$zindex-fixed: 1030;
+$zindex-modal-backdrop: 1040;
+$zindex-offcanvas: 1050;
+$zindex-modal: 1060;
+$zindex-popover: 1070;
+$zindex-tooltip: 1080;
+
+
+/*
+
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+
+*/

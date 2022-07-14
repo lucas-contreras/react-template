@@ -7,7 +7,7 @@ const layoutInitialValue = {
 
 const LayoutContext = React.createContext(layoutInitialValue);
 
-export default function LayoutProvider({ children }) {
+export default function AppProvider({ children }) {
 	const [panelOpen, setPanelOpen] = useState(false);
 
 	const value = useMemo(
@@ -27,7 +27,7 @@ export default function LayoutProvider({ children }) {
 	);
 }
 
-export function useLayoutContext() {
+export function useAppContext() {
 	const ctx = useContext(LayoutContext);
 	if (!ctx) {
 		throw new Error("context has not been setted");

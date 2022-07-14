@@ -6,6 +6,11 @@ export default function Home2() {
 	return (
 		<div className="wrap">
 			<nav className="wrap-nav">
+				<div>
+					<h1>
+						<img src="" alt="con ver cer" />
+					</h1>
+				</div>
 				<ol className="wrap-list">
 					<li>
 						<a className="wrap-list__link" href="#">
@@ -34,7 +39,11 @@ export default function Home2() {
 					</li>
 					<li></li>
 					<li>
-						<a className="wrap-list__link button" href="#" role="button">
+						<a
+							className="wrap-list__link button"
+							href="#"
+							role="button"
+						>
 							Ligar agora
 						</a>
 					</li>

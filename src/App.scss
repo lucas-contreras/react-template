@@ -1,9 +1,9 @@
 @import './constants';
 
-.main {
-    position: absolute;
-    left: $controls-width;
-    top: calc(#{$header-height} + #{$navigation-min-height});
-    height: calc(100% - #{$header-height});
-    width: calc(100% - #{$controls-width});
-}
+// .main {
+//     position: absolute;
+//     left: $controls-width;
+//     top: calc(#{$header-height} + #{$navigation-min-height});
+//     height: calc(100% - #{$header-height});
+//     width: calc(100% - #{$controls-width});
+// }

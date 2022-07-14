@@ -1,0 +1,56 @@
+
+.home2-main {
+    background-image: url('./assets/children.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    // height: 100vh;
+    height: 1300px;
+    width: 100%;
+}
+
+.wrap-nav {
+    left: 0;
+    top: 2rem;
+    position: fixed;
+    width: 100%;
+
+    // delete this line then
+    background-color: transparent;
+}
+
+.wrap-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    
+    & li {
+        margin-right: 2rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: bold;
+        color: #fff;
+
+        transition: color 1s;
+    }
+}
+
+.wrap-list__link {
+    &:hover {
+        color: green;
+    }
+    
+    &.button {
+        background-image: radial-gradient(168.2% 2639.76% at -30.58% 125%, #2077B0 11.23%, #0FB5BD 79.58%);
+        border-radius: 20px;
+        padding: 1rem;
+
+        &:hover {
+            color: salmon;
+        }
+    }
+}
